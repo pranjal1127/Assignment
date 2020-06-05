@@ -11,7 +11,7 @@ ReactDOM.render(
  <Router>
 
     <Switch>
-      <Route path='/form'>
+      <Route path='/'>
         <DataTable />
       </Route>
       <Route path='/new'> 
