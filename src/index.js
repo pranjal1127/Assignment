@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {  BrowserRouter as Router,  Switch, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
+import DataTable from './DataTable';
 import * as serviceWorker from './serviceWorker';
+import EnhancedTable from './EnhancedTable';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ <Router>
+
+    <Switch>
+      <Route path='/form'>
+        <DataTable />
+      </Route>
+      <Route path='/new'> 
+        <EnhancedTable />
+      </Route>
+      <Route path='/'> 
+        <App />
+      </Route>
+    </Switch>
+ </Router>
+    
+  ,
   document.getElementById('root')
 );
 

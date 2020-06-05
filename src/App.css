@@ -2,6 +2,43 @@
   text-align: center;
 }
 
+.datatable{
+  margin: 15% 0;
+}
+h1{
+  margin: 0;
+  color: rgb(180, 179, 179);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form{
+  width: fit-content;
+  /* position: absolute; */
+  
+  display: inline-block
+}
+td,th{
+  text-align: center;
+}
+
+#data {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data td, #data th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#data tr:hover {background-color: #ddd;}
+
+#data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #3F51B5;
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
